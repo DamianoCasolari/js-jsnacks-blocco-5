@@ -2,64 +2,70 @@
 
 const zuchinis = [
     {
-        type : rosso,
+        type : "rosso",
         weightKg : 0.5,
         lengthCm : 21
 
     },
     {
-        type : rosso,
+        type : "rosso",
         weightKg : 0.6,
         lengthCm : 20
 
     },
     {
-        type : rosse,
+        type : "rosso",
         weightKg : 0.8,
         lengthCm : 27
 
     },
     {
-        type : rosse,
+        type : "rosse",
         weightKg : 0.9,
         lengthCm : 30
 
     },
     {
-        type : verdi,
+        type : "verdi",
         weightKg : 0.5,
         lengthCm : 218
 
     },
     {
-        type : rosse,
+        type : "rosse",
         weightKg : 0.5,
         lengthCm : 30
 
     },
     {
-        type : rosse,
+        type : "rosse",
         weightKg : 0.5,
         lengthCm : 15
 
     },
     {
-        type : rosse,
+        type : "rosse",
         weightKg : 0.5,
         lengthCm : 10
 
     },
     {
-        type : rosse,
+        type : "rosse",
         weightKg : 0.5,
         lengthCm : 16
 
     },
     {
-        type : rosse,
+        type : "rosse",
         weightKg : 0.7,
         lengthCm : 25
 
     },
 ] 
 
+let TotalWeightZuchinis = 0;
+zuchinis.forEach((object,index) => { 
+    TotalWeightZuchinis += zuchinis[index].weightKg;
+})
+
+console.log(TotalWeightZuchinis);
