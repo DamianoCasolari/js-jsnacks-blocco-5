@@ -64,8 +64,8 @@ const zuchinis = [
 ] 
 
 let TotalWeightZuchinis = 0;
-zuchinis.forEach((object,index) => { 
-    TotalWeightZuchinis += zuchinis[index].weightKg;
+zuchinis.forEach((object) => { 
+    TotalWeightZuchinis += object.weightKg;
 })
 
 console.log(TotalWeightZuchinis);
